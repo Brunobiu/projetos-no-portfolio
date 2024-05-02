@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/*ESTILO GERAL///////////////////////////////////////////////////////////////////////////////*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: linear-gradient(to right, #fff, #fff);
+	height: 100vh;
+	
+}
+
+.banner.nigth{
+    background: linear-gradient(to right, #000, #000);
+}
+
+
+/*Cards /////////////////*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 525px;
+    background-color: #c3f5a2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-containt{
+	padding: 16px;
+}
+
+.card-containt h3{
+	font-size: 28px;
+	margin-bottom: 8px;
+	color: #000;
+}
+
+.card-containt p{
+	color: #666;
+	font-size: 15px;
+	line-height: 1.3;
+}
+
+.card-containt .btn{
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #333;
+	text-decoration: none;
+	border-radius: 4px;
+	margin-top: 16px;
+	color: #fff;
+}
+
+
+
+
+
+/*Skils*/
+.skills {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.skill-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-list li {
+    margin: 0 20px;
+}
+
+.skill-list img {
+    width: 60px;
+    height: 60px; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill-list span {
+    display: block;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/*ESTILO CABEÇALHO/////////////////////////////////*/
+header {
+	padding: 10px 4%;
+}
+
+header>.interface {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+header .logo span{
+    color: #00FF08;
+}
+
+
+header a {
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	transition: .2s;
+}
+
+header nav ul {
+	list-style-type: none;
+}
+
+header a:hover {
+	color: #212020;
+	transform: scale(1.1);
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+
+
+
+
+
+/* Dia e noite */
+.dayNight {
+    position: fixed;
+    bottom: 25px; 
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #666;
+    border-radius: 50%;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+
+
+
+.banner.nigth .dayNight{
+    background: #444;
+    color: #fff;
+}
+
+.dayNight ion-icon:nth-child(2),
+.banner.nigth .dayNight ion-icon:nth-child(1){
+    display: none;
+}
+
+.banner.nigth .dayNight ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.nigth header a,
+.banner.nigth .topo-do-site h1,
+.banner.nigth h2.titulo,
+.banner.nigth .espacialidade .especial-box p,
+.banner.nigth .espacialidade .especial-box h3,
+.banner.nigth .sobre .txt-sobre p,
+.banner.nigth .sobre .txt-sobre h2,
+.banner.nigth footer .line-footer p a, 
+.banner.nigth .topo-do-site .txt-topo-site h4,
+.banner.nigth footer .line-footer p i,
+.banner.nigth .espacialidade .especial-box:hover,
+.banner.nigth .swiper-slide-active,
+.banner.nigth .testionalBox,
+.banner.nigth .swiper-slide
+ {
+    color: #fff;
+}
+
+.banner.nigth .sci li a:hover{
+    color: #2196f3;
+}
+
+
+
+
+/*Botao a cima do roda pé*/
+.btn-social button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+	background-color: #00FF08;
+	font-size: 22px;
+	cursor: pointer;
+	margin: 0 6px;
+	transition: .2s;
+}
+
+
+
+/*ESTILO RODAPÈ*/
+footer {
+	padding: 60px 4%;
+	box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+	justify-content: space-between;
+}
+
+footer .line-footer {
+	padding: 20px 0;
+}
+
+.borda {
+	border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i {
+	color: #000;
+	font-size: 22px;
+}
+
+footer .line-footer p a {
+	color: #000;
+}
+
+.logo-footer img {
+	width: 210px;
+	height: 210px;
+}
+
+
+
+/*media peiar*/
+@media screen and (max-width: 1020px) {
+	/*CLASSES GERAIS*/
+	.flex {
+		flex-direction: column;
+	}
+	h2.titulo {
+		font-size: 28px;
+	}
+
+	/*Cabeçalho*/
+	.menu-desktop {
+		display: none;
+		line-height: 30px;
+	}
+
+	/*Topo do site*/
+	section.topo-do-site {
+		padding: 20px 8%;
+	}
+	.topo-do-site h1 {
+		font-size: 30px;
+	}
+
+	.skill-list img {
+		width: 25px;
+		height: 25px; 
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	footer .flex {
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    footer .line-footer {
+        width: 100%; 
+        text-align: center; 
+    }
+
+	
+
+	.card-container {
+        justify-content: center; 
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+        margin: 20px; 
+    }
+
+
+
+
+	header>.interface {
+        justify-content: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        font-size: 2.5em;
+    }
+
+	.card-container {
+		margin-top: 0px;
+	}
+
+	.card-containt h3{
+		font-size: 20px;
+	}
+
+	.card-containt p{
+		font-size: 10px;
+	}
+	
+	.card-containt .btn{
+		display: inline-block;
+		padding: 5px 5px;
+		background-color: #333;
+		text-decoration: none;
+		border-radius: 4px;
+		margin-top: 16px;
+		color: #fff;
+	}
+
+
+
+	
+}
